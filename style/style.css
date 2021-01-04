@@ -1387,3 +1387,58 @@ textarea:focus{background:#f4f4f4; height:250px;}
 	width: 50px;
 	height: 50px;
 }
+
+
+.locations .text-intro h1 {
+	text-transform: capitalize;
+}
+
+#stagger {
+    background-color: #001644;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5em;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Rotunda Extra Bold", sans-serif;
+    letter-spacing: 6px;
+    margin: 0;
+    line-height: 1.2;
+    padding: 1rem;
+    width: fit-content;
+    position: relative;
+    top: -3rem;
+    left: 5rem;
+ }
+
+
+.animation-wrapper {
+  padding-bottom: 50%;
+    width: 65%;
+    margin: auto;
+}
+
+.sphere-animation {
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -290px;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 10px;
+  stroke: rgba(80,80,80,.35);
+  backface-visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: .4px;
+  }
+}

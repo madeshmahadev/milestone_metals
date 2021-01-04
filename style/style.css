@@ -1413,6 +1413,10 @@ textarea:focus{background:#f4f4f4; height:250px;}
     top: -3rem;
     left: 5rem;
  }
+ 
+ #stagger span {
+	 display: inline-block 
+ }
 
 
 .animation-wrapper {

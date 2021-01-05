@@ -1,17 +1,15 @@
 <!doctype html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Milestone Metals Inc.</title>
-	<!--Style-->
-	<link rel="stylesheet" type="text/css" href="./style/reset.css">
-	<link rel="stylesheet" type="text/css" href="./style/style.css">
-	<link rel="stylesheet" type="text/css" href="./style/style-responsive.css">
-	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet prefetch" type="text/css" href="./style/semantic.min.css">
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/css/uikit.min.css" />
+	<link rel="stylesheet" href="/assets/css/style.min.css" />
 	<link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/js/uikit-icons.min.js"></script>
 	<!--favicon -->
 	<link rel="canonical" href="/" />
 	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -20,16 +18,8 @@
 	<link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
 	<link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
 	<link rel="manifest" href="./site.webmanifest">
+	
 
-
-
-
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
-
-
-	<!--Reqd scripts -->
-	<script src="./script/jquery.min.js"></script>
-	<script src="./script/semantic.min.js"></script>
 </head>
 <body>
 
@@ -52,489 +42,285 @@
 					</g>
 				</g>
 			</svg>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
 	</div>
 
-	<!--Header-->
-	<div class="header-container ui">
-		<div class="container-bg"></div>
-		<header id="fullscreen">
-			<div class="ui secondary  menu">
-					<div class="logo" id="full"><a class="ajax-link" href="/"><img src="./assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a></div>
-					<div class="right menu">
-							<a class="active item">
-						    Home
-						  </a>
-						  <a class="item">
-						    About us
-						  </a>
-						  <a class="item">
-						    News
-						  </a>
-							<a class="item">
-						    Gallery
-						  </a>
-							<a class="item" id="contact-us-nav-btn">
-						    Contact us
-						  </a>
+<!-- Sticky navbar -->
+<div class="uk-position-top" id="top">
+  <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;"
+       data-uk-sticky="animation: uk-animation-slide-top; 
+                       sel-target: .uk-navbar-container; 
+                       cls-active: uk-navbar-sticky; 
+                       cls-inactive: uk-navbar-transparent uk-light; top: 0">
+    <!-- LEFT -->
+    <div class="uk-navbar-left">
+      <a class="uk-navbar-item uk-logo logo" href="/"><img src="/assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
+    </div>
+   
+    <div class="uk-navbar-right">
+      <div class="uk-navbar-item  uk-visible@m">
+		  <ul class="uk-navbar-nav uk-visible@m">
+			<li class="uk-active"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li class="contact-btn"><a href="#">Contact</a></li>
+		  </ul>
+      </div>
+    </div>
+
+    <!--off-canvas trigger hamburger btn. show only on mobile -->
+    <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+      <span uk-navbar-toggle-icon></span>
+    </a>
+    </div>
+  </nav>
+</div>
+
+
+<nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: true">
+  <!-- offcanvas setting  -->
+  <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+    <!-- navbar content her -->
+    <!-- A - logo -->
+    <a class="uk-align-left uk-logo" href="/"><img src="./assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
+    <!-- B - nav -->
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+      <li class="uk-active"><a href="#">Active - offcanvas</a></li>
+      <li class="uk-parent">
+        <a href="#">Parent - offcanvas</a>
+        <ul class="uk-nav-sub">
+          <li><a href="#">Child one - offcanvas</a></li>
+          <li><a href="#">Child two - offcanvas</a></li>
+        </ul>
+      </li>
+      <li class=""><a href="#">ITEM - offcanvas</a></li>
+    </ul>
+    <!--C- contact us -->
+    <footer class="uk-margin-large-top">
+      <hr>
+      <span uk-icon="icon: phone"></span>
+      <a class="uk-link-text" href="#">+972 3434 3435</a>
+    </footer>
+  </div>
+</nav>
+
+			<header id="hero-header">
+			  <div class="uk-section header-section">
+				<div class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-flex uk-flex-middle landing-screen" uk-parallax="bgx: 0,-60" data-uk-height-viewport="offset-top: false">
+				  <div class="uk-width-1-1">
+					<div class="uk-child-width-1-2@l">
+						<div>
+							<div class="uk-container uk-container-large uk-animation-fade uk-animation-slow header-content">
+							  <h3 class="uk-margin-small uk-margin-medium-top uk-width-large@m uk-text-left@m uk-text-center uk-h6 uk-heading-line header-sub-heading" data-uk-parallax="opacity: 1,0;viewport: 0.95;media: @s">
+								We're
+							  </h3>
+							  <h2 class="uk-margin-small uk-text-left@m uk-text-center uk-heading-large header-heading" 
+								  data-uk-parallax="y: 0,60;opacity: 1,0; easing: 0.8;viewport: 0.95;media: @s">
+								Milestone<br>
+								Metals Inc.<br>
+							  </h2>
+							  <p>We are growing rapidly through diversification in scrap processing, metal fabrication, and erection of ornamental iron & a wide variety of other metals. We quickly became one of the foremost miscellaneous metal contractors in the United States.
+							  </p>
+							  <div class="uk-margin uk-text-left@m uk-text-center" data-uk-parallax="y: 0,450;opacity: 1,0;easing: 0.3;target: !.uk-section;media: @s">
+								<a class="explore-us-button" href="#main" data-uk-scroll="offset: 100">Explore Us</a>
+							  </div>
+							</div>
+
+						</div>
+						<div>
+							<div class="home-sidebar uk-text-center" id="hero">
+									<div class="uk-position-center parallax uk-animation-fade uk-animation-slow"><img src="./assets/images/milestone-metals-inc.png"></div>
+									<div class="animation-wrapper">
+									  <div class="sphere-animation">
+										<svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
+										  <path d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 59.663-28.726 8.542 8.543-4.319 35.255-28.727 59.662z"/>
+										  <path d="M360.72 360.354c-35.879 35.88-75.254 54.677-87.946 41.985-12.692-12.692 6.105-52.067 41.985-87.947 35.879-35.879 75.254-54.676 87.946-41.984 12.692 12.692-6.105 52.067-41.984 87.946z"/>
+										  <path d="M357.185 356.819c-44.91 44.91-94.376 68.258-110.485 52.149-16.11-16.11 7.238-65.575 52.149-110.485 44.91-44.91 94.376-68.259 110.485-52.15 16.11 16.11-7.239 65.576-52.149 110.486z"/>
+										  <path d="M350.998 350.632c-53.21 53.209-111.579 81.107-130.373 62.313-18.794-18.793 9.105-77.163 62.314-130.372 53.209-53.21 111.579-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
+										  <path d="M343.043 342.677c-59.8 59.799-125.292 91.26-146.283 70.268-20.99-20.99 10.47-86.483 70.269-146.282 59.799-59.8 125.292-91.26 146.283-70.269 20.99 20.99-10.47 86.484-70.27 146.283z"/>
+										  <path d="M334.646 334.28c-65.169 65.169-136.697 99.3-159.762 76.235-23.065-23.066 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
+										  <path d="M324.923 324.557c-69.806 69.806-146.38 106.411-171.031 81.76-24.652-24.652 11.953-101.226 81.759-171.032 69.806-69.806 146.38-106.411 171.031-81.76 24.652 24.653-11.953 101.226-81.759 171.032z"/>
+										  <path d="M312.99 312.625c-73.222 73.223-153.555 111.609-179.428 85.736-25.872-25.872 12.514-106.205 85.737-179.428s153.556-111.609 179.429-85.737c25.872 25.873-12.514 106.205-85.737 179.429z"/>
+										  <path d="M300.175 299.808c-75.909 75.909-159.11 115.778-185.837 89.052-26.726-26.727 13.143-109.929 89.051-185.837 75.908-75.908 159.11-115.778 185.837-89.051 26.726 26.726-13.143 109.928-89.051 185.836z"/>
+										  <path d="M284.707 284.34c-77.617 77.617-162.303 118.773-189.152 91.924-26.848-26.848 14.308-111.534 91.924-189.15C265.096 109.496 349.782 68.34 376.63 95.188c26.849 26.849-14.307 111.535-91.923 189.151z"/>
+										  <path d="M269.239 267.989c-78.105 78.104-163.187 119.656-190.035 92.807-26.849-26.848 14.703-111.93 92.807-190.035 78.105-78.104 163.187-119.656 190.035-92.807 26.849 26.848-14.703 111.93-92.807 190.035z"/>
+										  <path d="M252.887 252.52C175.27 330.138 90.584 371.294 63.736 344.446 36.887 317.596 78.043 232.91 155.66 155.293 233.276 77.677 317.962 36.521 344.81 63.37c26.85 26.848-14.307 111.534-91.923 189.15z"/>
+										  <path d="M236.977 236.61C161.069 312.52 77.867 352.389 51.14 325.663c-26.726-26.727 13.143-109.928 89.052-185.837 75.908-75.908 159.11-115.777 185.836-89.05 26.727 26.726-13.143 109.928-89.051 185.836z"/>
+										  <path d="M221.067 220.7C147.844 293.925 67.51 332.31 41.639 306.439c-25.873-25.873 12.513-106.206 85.736-179.429C200.6 53.786 280.931 15.4 306.804 41.272c25.872 25.873-12.514 106.206-85.737 179.429z"/>
+										  <path d="M205.157 204.79c-69.806 69.807-146.38 106.412-171.031 81.76-24.652-24.652 11.953-101.225 81.759-171.031 69.806-69.807 146.38-106.411 171.031-81.76 24.652 24.652-11.953 101.226-81.759 171.032z"/>
+										  <path d="M189.247 188.881c-65.169 65.169-136.696 99.3-159.762 76.235-23.065-23.065 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
+										  <path d="M173.337 172.971c-59.799 59.8-125.292 91.26-146.282 70.269-20.991-20.99 10.47-86.484 70.268-146.283 59.8-59.799 125.292-91.26 146.283-70.269 20.99 20.991-10.47 86.484-70.269 146.283z"/>
+										  <path d="M157.427 157.061c-53.209 53.21-111.578 81.108-130.372 62.314-18.794-18.794 9.104-77.164 62.313-130.373 53.21-53.209 111.58-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
+										  <path d="M141.517 141.151c-44.91 44.91-94.376 68.259-110.485 52.15-16.11-16.11 7.239-65.576 52.15-110.486 44.91-44.91 94.375-68.258 110.485-52.15 16.109 16.11-7.24 65.576-52.15 110.486z"/>
+										  <path d="M125.608 125.241c-35.88 35.88-75.255 54.677-87.947 41.985-12.692-12.692 6.105-52.067 41.985-87.947C115.525 43.4 154.9 24.603 167.592 37.295c12.692 12.692-6.105 52.067-41.984 87.946z"/>
+										  <path d="M109.698 109.332c-24.408 24.407-51.12 37.268-59.663 28.726-8.542-8.543 4.319-35.255 28.727-59.662 24.407-24.408 51.12-37.27 59.662-28.727 8.543 8.543-4.319 35.255-28.726 59.663z"/>
+										</svg>
+									  </div>
+									</div>
+							</div>
+						</div>
+					</div>
+					
+					
 				  </div>
 				</div>
-		</header>
-		<div class="clear"></div>
-	<!--Content-->
+			  </div>
+			</header>
 
-		<div class="content" id="ajax-content">
-			<div class="text-intro" id="site-type">
-				<h2>We're</h2>
-				<h1>Milestone</h1>
-				<h1>Metals Inc.</h1>
-				<p>We are growing rapidly through diversification in scrap processing, metal fabrication, and erection of ornamental iron & 
-				a wide variety of other metals. We quickly became one of the foremost miscellaneous metal contractors in the United States.</p>
-				<a href="/" class="explore-us-button"><span>Explore Us</span></a>
-			</div>
-		</div>
-		<!--Sidebar-->
-		<div id="ajax-sidebar">
-			<div class="home-sidebar-outer"></div>
-				<div class="home-sidebar" id="hero">
-					<div class="parallax-option" style="margin-left: 12rem;" data-jkit="[parallax:strength=0.8;axis=both]">
-						<div class="parallax parallax1"><img src="./assets/images/Layer 2.png"></div>
-					</div>
-					<div class="parallax-option" style="margin-left: 12rem;" data-jkit="[parallax:strength=0.3;axis=both]">
-						<div class="parallax parallax1"><img src="./assets/images/milestone-metals-inc.png"></div>
-					</div>
-				</div>
-			</div>
+            <section class="uk-section uk-section-muted small-container" id="who-we-are">
+               <div class="uk-container uk-margin-medium-top">
+                  <div class="uk-grid uk-child-width-1-2@l uk-flex-middle"  data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium">
+                     <div>
+                        <div class="">
+                           <h2 class="sub-heading">Who <br> Are We</h2>
+                        </div>
+                     </div>
+                     <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium" uk-height-match>
+                        <div class="uk-width-expand">
+							<p class="uk-text-justify">We’ve got you covered! Milestone Metals is a full service fabricator and erector of structural and miscellaneous metals.We also ship our fabricated metals to job sites for erection throughout America. Each and every metal fabrication and erection project is delivered in a safe and timely manner, all while providing the best value for our clients.
+							With Milestone, you not only receive the benefit of highly qualified and certified staff, but you also receive the same high quality standards and decades of project management experience that Milestone is known for.
+							</p>
+						</div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+			
+			
+			<section class="uk-section uk-section-muted" id="us-slider">
+               <div class="uk-container">
+                  <div class="uk-grid uk-flex-middle"  data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium">
+                     <div class="uk-flex-middle" data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium">
+                        <div class="uk-width-expand">
 
-			<!-- Social Media -->
-		<div class="social-button-icon-container">
-			<a class="social-button-icon" href="/" target="_blank">
-	      <i class="fab fa-facebook-f"></i>
-	    </a>
-			<a class="social-button-icon" href="/" target="_blank">
-	      <i class="fab fa-linkedin"></i>
-	    </a>
-			<a class="social-button-icon" href="/" target="_blank">
-	      <i class="fab fa-instagram" aria-hidden="true"></i>
-	    </a>
-			<a class="social-button-icon" href="/" target="_blank">
-	      <i class="fab fa-twitter" aria-hidden="true"></i>
-	    </a>
-		</div>
-		<div class="plus-sign-container"></div>
-	</div>
+								<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+									<ul class=" uk-child-width-1-3@l uk-grid">
+										<li class="slider-card-block">
+											<div class="uk-card uk-card-default card-block">
+												<div class="uk-card-media-top">
+													<img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+												</div>
+												<div class="uk-card-body uk-height-medium">
+													<h3 class="uk-card-title">Certified by city of Houston</h3>
+													<p>Milestone Metals, Inc. is certified by the City of Houston as a Fabricator of Structural and Miscellaneous Steel. We are willing to take on jobs some would consider impossible. Nothing is too difficult for us!</p>
+												</div>
+											</div>
+										</li>
+										<li class="slider-card-block">
+											<div class="uk-card uk-card-default card-block">
+												<div class="uk-card-media-top">
+													<img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+												</div>
+												<div class="uk-card-body uk-height-medium" >
+													<h3 class="uk-card-title">Quality and Innovation</h3>
+													<p>Milestone specializes in quality fabrication and erection of ornamental iron and a wide variety of other metals. Our customers include art galleries, city and state governments, custom and residential homes, chemical companies, retail locations, high-rises, and many more all across the United States.</p>
+												</div>
+											</div>
+										</li>
+										<li class="slider-card-block">
+											<div class="uk-card uk-card-default card-block">
+												<div class="uk-card-media-top">
+													<img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+												</div>
+												<div class="uk-card-body uk-height-medium">
+													<h3 class="uk-card-title">A 35 Year History of Excellence</h3>
+													<p>Starting as a small metal fabricator and erector that specialized in the design, coordination, fabrication and erection of ornamental metal, Milestone Metals quickly became one of the foremost miscellaneous metal contractors in the Houston Metro Area. Milestone has been honored on more than one occasion for our craftsmanship.</p>
+												</div>
+											</div>
+										</li>
+									</ul>
 
-	<!-- Section-2 -->
-	<div class="ui two column doubling stackable grid container who-we-are" id="ajax-content-2">
-		<div class="column">
-					<h1 class="sub-title">Who <br> Are We</h1>
-		</div>
-		<div class="column">
-			<p>
-			We’ve got you covered! Milestone Metals is a full service fabricator and erector of structural and miscellaneous metals.We also ship our fabricated metals to job sites for erection throughout America. Each and every metal fabrication and erection project is delivered in a safe and timely manner, all while providing the best value for our clients.
-			With Milestone, you not only receive the benefit of highly qualified and certified staff, but you also receive the same high quality standards and decades of project management experience that Milestone is known for.
-			</p>
-		</div>
-	</div>
+	
 
-
-
-	<div class="content our-mission" id="ajax-content">
-
-		<div class="blog-slider">
-		  <div class="blog-slider__wrp swiper-wrapper">
-		    <div class="blog-slider__item swiper-slide">
-		      <div class="blog-slider__img">
-
-		        <img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-		      </div>
-		      <div class="blog-slider__content">
-		        <div class="blog-slider__title">Certified by city of Houston</div>
-		        <div class="blog-slider__text">Milestone Metals, Inc. is certified by the City of Houston as a Fabricator of Structural and Miscellaneous Steel.</div>
-		        <a href="#" class="blog-slider__button">READ MORE</a>
-		      </div>
-		    </div>
-		    <div class="blog-slider__item swiper-slide">
-		      <div class="blog-slider__img">
-		        <img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-		      </div>
-		      <div class="blog-slider__content">
-		        <div class="blog-slider__title">Quality and Innovation</div>
-		        <div class="blog-slider__text">Milestone specializes in quality fabrication and erection of ornamental iron and a wide variety of other metals. Our customers include art galleries, city and state governments, custom and residential homes, chemical companies, retail locations, high-rises, and many more all across the United States. We are willing to take on jobs some would consider impossible. Nothing is too difficult for us!</div>
-		        <a href="#" class="blog-slider__button">READ MORE</a>
-		      </div>
-		    </div>
-
-		    <div class="blog-slider__item swiper-slide">
-		      <div class="blog-slider__img">
-		        <img src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-		      </div>
-		      <div class="blog-slider__content">
-		        <div class="blog-slider__title">A 35 Year History of Excellence</div>
-		        <div class="blog-slider__text">Starting as a small metal fabricator and erector that specialized in the design, coordination, fabrication and erection of ornamental metal, Milestone Metals quickly became one of the foremost miscellaneous metal contractors in the Houston Metro Area. Milestone has been honored on more than one occasion for our craftsmanship.</div>
-		        <a href="#" class="blog-slider__button">READ MORE</a>
-		      </div>
-		    </div>
-
-		  </div>
-		  <div class="blog-slider__pagination"></div>
-		</div>
-
-	</div>
+								</div>
 
 
 
-
-	<div class="ui four column doubling stackable grid container counters" id="ajax-content-2">
-		<div class="column">
-			<h2 class="counter" data-target="6000">0</h2>
-			<p>Employees</p>
-		</div>
-		<div class="column">
-			<h2 class="counter" data-target="6000">0</h2>
-			<p>Customers</p>
-		</div>
-		<div class="column">
-			<h2 class="counter" data-target="6000">0</h2>
-			<p>Locations</p>
-		</div>
-		<div class="column">
-			<h2 class="counter" data-target="6000">0</h2>
-			<p>Clients</p>
-		</div>
-	</div>
-
-
-	<div class="content our-mission" id="ajax-content">
-		<div class="text-intro">
-				<h1>Our Mission <br> & Vision</h1>
-					<div class="one-column">
-						<p>Our goal is to improve the environment through recycling, 
+						
+						
+						</div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+			
+            <section class="uk-section uk-section-muted small-container-2" id="our-mission">
+               <div class="uk-container uk-margin-medium-top">
+                  <div class="uk-grid uk-child-width-1-2@l uk-flex-middle"  data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium">
+                     <div>
+                        <div class="">
+                            <h2 class="sub-heading">Our Mission <br> & Vision</h2>
+                        </div>
+                     </div>
+                     <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium" uk-height-match>
+                        <div class="uk-width-expand">
+							<p class="uk-text-justify">Our goal is to improve the environment through recycling, 
 						in collaboration with staff, business partners, government agencies, 
 						and the general public, to create a clean and safe place 
 						to live and work. Milestone Metals provide a highly efficient and cost-effective scrap management, 
-						metal fabrication, and other support services for the United States.</p>
+						metal fabrication, and other support services for the United States.
+							</p>
+						</div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+			<footer class="site-footer">
+				<nav class="footer__nav">
+					<div class="uk-column-1-4@l footer-cells">
+						<div class="footer-cell">
+							<h2 class="footer-cell-heading">Sitemap</h2>
+							<ul class="footer-list">
+								<li>Home</li>
+								<li>About</li>
+								<li>Services</li>
+								<li>Contact</li>
+							</ul>
+						</div>
+						<div class="footer-cell">
+							<h2 class="footer-cell-heading">Locate Us</h2>
+							<ul class="footer-list">
+								<li>
+									<h3 class="footer-sub-heading-2">Address</h3>
+									<p>113 W Lorino St Houston, Texas 77037</p>
+								</li>
+								<li>
+									<h3 class="footer-sub-heading-2">Mail us</h3>
+									<a class="footer-contact-btn" href="mailto:info@milestonemetals.com">info@milestonemetals.com</a>
+								</li>
+								<li>
+									<h3 class="footer-sub-heading-2">Call us</h3>
+									<a class="footer-contact-btn" href="tel:281-448-9151">281-448-9151</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-cell">
+							<h2 class="footer-cell-heading">Legals</h2>
+							<ul class="footer-list">
+								<li>Terms & Conditions</li>
+								<li>Code of Conduct</li>
+								<li>Goods and Services</li>
+							</ul>
+						</div>
+						<div class="footer-cell"> 
+							<h2 class="footer-cell-heading">Social Media</h2>
+							<ul class="footer-list" id="social-media-footer-cells-bottom">
+								<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							</ul>						
+						</div>
 					</div>
-							<div class="two-column">
-								<div id="stagger">
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								  <div class="animate-me">
-									Milestone Metals Inc.
-								  </div>
-								</div>
-								
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" type="text/javascript"></script>
-							<script src="https://cdn.jsdelivr.net/gh/WojciechWKROPCE/letterize-js/lib/letterize.min.js"></script>
-							<script>
-							var test = new Letterize({
-									targets: ".animate-me"
-								  });
-
-								  var animation = anime.timeline({
-									targets: test.listAll(),
-									delay: anime.stagger(100, {
-									  grid: [test.list()[0].length, test.list().length],
-									  from: "center"
-									}),
-									loop: true
-								  });
-
-								  animation
-									.add({
-									  scale: 0.5
-									})
-									.add({
-									  letterSpacing: "10px"
-									})
-									.add({
-									  scale: 1
-									})
-									.add({
-									  letterSpacing: "6px"
-									});
-							</script>				
-
-							</div>
-							<div class="clear"></div>
-					</div>
-	</div>
-
+				</nav>
+			</footer>
 	
-	<div class="content locations" id="ajax-content">
-		<div class="text-intro">
-				<h1>Our Locations</h1>
-		<div class="animation-wrapper">
-		  <div class="sphere-animation">
-			<svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" type="text/javascript"></script>
+	<script src="/assets/js/main.js" type="text/javascript"></script>
 
-			  <path d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 59.663-28.726 8.542 8.543-4.319 35.255-28.727 59.662z"/>
-			  <path d="M360.72 360.354c-35.879 35.88-75.254 54.677-87.946 41.985-12.692-12.692 6.105-52.067 41.985-87.947 35.879-35.879 75.254-54.676 87.946-41.984 12.692 12.692-6.105 52.067-41.984 87.946z"/>
-			  <path d="M357.185 356.819c-44.91 44.91-94.376 68.258-110.485 52.149-16.11-16.11 7.238-65.575 52.149-110.485 44.91-44.91 94.376-68.259 110.485-52.15 16.11 16.11-7.239 65.576-52.149 110.486z"/>
-			  <path d="M350.998 350.632c-53.21 53.209-111.579 81.107-130.373 62.313-18.794-18.793 9.105-77.163 62.314-130.372 53.209-53.21 111.579-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
-			  <path d="M343.043 342.677c-59.8 59.799-125.292 91.26-146.283 70.268-20.99-20.99 10.47-86.483 70.269-146.282 59.799-59.8 125.292-91.26 146.283-70.269 20.99 20.99-10.47 86.484-70.27 146.283z"/>
-			  <path d="M334.646 334.28c-65.169 65.169-136.697 99.3-159.762 76.235-23.065-23.066 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
-			  <path d="M324.923 324.557c-69.806 69.806-146.38 106.411-171.031 81.76-24.652-24.652 11.953-101.226 81.759-171.032 69.806-69.806 146.38-106.411 171.031-81.76 24.652 24.653-11.953 101.226-81.759 171.032z"/>
-			  <path d="M312.99 312.625c-73.222 73.223-153.555 111.609-179.428 85.736-25.872-25.872 12.514-106.205 85.737-179.428s153.556-111.609 179.429-85.737c25.872 25.873-12.514 106.205-85.737 179.429z"/>
-			  <path d="M300.175 299.808c-75.909 75.909-159.11 115.778-185.837 89.052-26.726-26.727 13.143-109.929 89.051-185.837 75.908-75.908 159.11-115.778 185.837-89.051 26.726 26.726-13.143 109.928-89.051 185.836z"/>
-			  <path d="M284.707 284.34c-77.617 77.617-162.303 118.773-189.152 91.924-26.848-26.848 14.308-111.534 91.924-189.15C265.096 109.496 349.782 68.34 376.63 95.188c26.849 26.849-14.307 111.535-91.923 189.151z"/>
-			  <path d="M269.239 267.989c-78.105 78.104-163.187 119.656-190.035 92.807-26.849-26.848 14.703-111.93 92.807-190.035 78.105-78.104 163.187-119.656 190.035-92.807 26.849 26.848-14.703 111.93-92.807 190.035z"/>
-			  <path d="M252.887 252.52C175.27 330.138 90.584 371.294 63.736 344.446 36.887 317.596 78.043 232.91 155.66 155.293 233.276 77.677 317.962 36.521 344.81 63.37c26.85 26.848-14.307 111.534-91.923 189.15z"/>
-			  <path d="M236.977 236.61C161.069 312.52 77.867 352.389 51.14 325.663c-26.726-26.727 13.143-109.928 89.052-185.837 75.908-75.908 159.11-115.777 185.836-89.05 26.727 26.726-13.143 109.928-89.051 185.836z"/>
-			  <path d="M221.067 220.7C147.844 293.925 67.51 332.31 41.639 306.439c-25.873-25.873 12.513-106.206 85.736-179.429C200.6 53.786 280.931 15.4 306.804 41.272c25.872 25.873-12.514 106.206-85.737 179.429z"/>
-			  <path d="M205.157 204.79c-69.806 69.807-146.38 106.412-171.031 81.76-24.652-24.652 11.953-101.225 81.759-171.031 69.806-69.807 146.38-106.411 171.031-81.76 24.652 24.652-11.953 101.226-81.759 171.032z"/>
-			  <path d="M189.247 188.881c-65.169 65.169-136.696 99.3-159.762 76.235-23.065-23.065 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
-			  <path d="M173.337 172.971c-59.799 59.8-125.292 91.26-146.282 70.269-20.991-20.99 10.47-86.484 70.268-146.283 59.8-59.799 125.292-91.26 146.283-70.269 20.99 20.991-10.47 86.484-70.269 146.283z"/>
-			  <path d="M157.427 157.061c-53.209 53.21-111.578 81.108-130.372 62.314-18.794-18.794 9.104-77.164 62.313-130.373 53.21-53.209 111.58-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
-			  <path d="M141.517 141.151c-44.91 44.91-94.376 68.259-110.485 52.15-16.11-16.11 7.239-65.576 52.15-110.486 44.91-44.91 94.375-68.258 110.485-52.15 16.109 16.11-7.24 65.576-52.15 110.486z"/>
-			  <path d="M125.608 125.241c-35.88 35.88-75.255 54.677-87.947 41.985-12.692-12.692 6.105-52.067 41.985-87.947C115.525 43.4 154.9 24.603 167.592 37.295c12.692 12.692-6.105 52.067-41.984 87.946z"/>
-			  <path d="M109.698 109.332c-24.408 24.407-51.12 37.268-59.663 28.726-8.542-8.543 4.319-35.255 28.727-59.662 24.407-24.408 51.12-37.27 59.662-28.727 8.543 8.543-4.319 35.255-28.726 59.663z"/>
-			</svg>
-		  </div>
-		</div>
-	</div>
-
-	<script>
-function fitElementToParent(el, padding) {
-  var timeout = null;
-  function resize() {
-    if (timeout) clearTimeout(timeout);
-    anime.set(el, {scale: 1});
-    var pad = padding || 0;
-    var parentEl = el.parentNode;
-    var elOffsetWidth = el.offsetWidth - pad;
-    var parentOffsetWidth = parentEl.offsetWidth;
-    var ratio = parentOffsetWidth / elOffsetWidth;
-    timeout = setTimeout(anime.set(el, {scale: ratio}), 10);
-  }
-  resize();
-  window.addEventListener('resize', resize);
-}
-
-var sphereAnimation = (function() {
-
-  var sphereEl = document.querySelector('.sphere-animation');
-  var spherePathEls = sphereEl.querySelectorAll('.sphere path');
-  var pathLength = spherePathEls.length;
-  var hasStarted = false;
-  var aimations = [];
-
-  fitElementToParent(sphereEl);
-
-  var breathAnimation = anime({
-    begin: function() {
-      for (var i = 0; i < pathLength; i++) {
-        aimations.push(anime({
-          targets: spherePathEls[i],
-          stroke: {value: ['rgba(0, 22, 68,1)', 'rgba(80,80,80,.35)'], duration: 500},
-          translateX: [2, -4],
-          translateY: [2, -4],
-          easing: 'easeOutQuad',
-          autoplay: false
-        }));
-      }
-    },
-    update: function(ins) {
-      aimations.forEach(function(animation, i) {
-        var percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
-        animation.seek(animation.duration * percent);
-      });
-    },
-    duration: Infinity,
-    autoplay: false
-  });
-
-  var introAnimation = anime.timeline({
-    autoplay: false
-  })
-  .add({
-    targets: spherePathEls,
-    strokeDashoffset: {
-      value: [anime.setDashoffset, 0],
-      duration: 3900,
-      easing: 'easeInOutCirc',
-      delay: anime.stagger(190, {direction: 'reverse'})
-    },
-    duration: 2000,
-    delay: anime.stagger(60, {direction: 'reverse'}),
-    easing: 'linear'
-  }, 0);
-
-  var shadowAnimation = anime({
-      targets: '#sphereGradient',
-      x1: '25%',
-      x2: '25%',
-      y1: '0%',
-      y2: '75%',
-      duration: 30000,
-      easing: 'easeOutQuint',
-      autoplay: false
-    }, 0);
-
-  function init() {
-    introAnimation.play();
-    breathAnimation.play();
-    shadowAnimation.play();
-  }
-  
-  init();
-
-})();
-	</script>
-
-	<div class="content testimonials" id="ajax-content">
-		<div class="text-intro">
-
-			<div class="testimonials-container">
-				<i class="fas fa-quote-left" style="color: white;"></i>
-				<p class="text" style="color:white"></p>
-
-				<div class="authors-container">
-					<div class="author selected"><img src="https://randomuser.me/api/portraits/men/41.jpg" alt=""></div>
-					<strong class="name" style="display: block; margin: 10px -10px;"></strong>
-				</div>
-			</div>
-
-<script>
-			const authorsEl = document.querySelectorAll('.author');
-const container = document.querySelector('.testimonials-container');
-const nameEl = document.querySelector('.name');
-const textEl = document.querySelector('.text');
-
-const testimonials = [{
-	text: 'I had my concerns that due to a tight deadline this project can\'t be done. But Florin proved me wrong not only he delivered an outstanding work but he managed to deliver 1 day prior to the deadline. And when I asked for some revisions he made them in MINUTES. I\'m looking forward to work with him again and I totally recommend him. Thanks again Florin!',
-	name: 'Ram, Founder',
-	color: '#001644'
-}];
-
-addTestimonial(0);
-
-authorsEl.forEach((author, idx) => {
-	author.addEventListener('click', (e) => {
-		addTestimonial(idx);
-		author.classList.add('selected');
-	})
-});
-
-function addTestimonial(idx) {
-	const testimonial = testimonials[idx];
-
-	nameEl.innerHTML = testimonial.name;
-	textEl.innerHTML = testimonial.text;
-	container.style.background = testimonial.color;
-	container.style.boxShadow = `0 35px 10px -20px ${testimonial.color.substring(0, testimonial.color.length-4)}0.9)`;
-
-	authorsEl.forEach(author => {
-		author.classList.remove('selected');
-	});
-}
-			</script>
-
-							<div class="two-column">
-
-							</div>
-							<div class="clear"></div>
-					</div>
-	</div>
-
-
-
-
-
-
-
-	<!--Footer-->
-  <footer>
-
-    <div class="footer-margin">
-      <div class="social-footer">
-        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.behance.net/"><i class="fa fa-behance"></i></a>
-      </div>
-      <div class="copyright">© Copyright 2020 Milestone Metals Inc. All Rights Reserved.</div>
-    </div>
-  </footer>
-	<!-- Scripts -->
-
-
-	<script src="./script/jquery.easing.min.js"></script>
-	<script src="./script/modernizr.custom.42534.js" type="text/javascript"></script>
-	<script src="./script/jquery.waitforimages.js" type="text/javascript"></script>
-	<script src="./script/typed.js" type="text/javascript"></script>
-	<script src="./script/masonry.pkgd.min.js" type="text/javascript"></script>
-	<script src="./script/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-	<script src="./script/jquery.jkit.1.2.16.min.js"></script>
-	<script src="./script/script.js" type="text/javascript"></script>
-
-
-	<script>
-			const counters = document.querySelectorAll('.counter');
-			const speed = 2000; // The lower the slower
-
-			counters.forEach(counter => {
-				const updateCount = () => {
-					const target = +counter.getAttribute('data-target');
-					const count = +counter.innerText;
-					const inc = target / speed;
-					if (count < target) {
-						counter.innerText = count + inc;
-						setTimeout(updateCount, 1);
-					} else {
-						counter.innerText = target;
-					}
-				};
-
-				updateCount();
-			});
-	</script>
-
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
-	<script>
-	var swiper = new Swiper('.blog-slider', {
-	      spaceBetween: 30,
-	      effect: 'fade',
-	      loop: true,
-				autoplay: true,
-	      mousewheel: {
-	        invert: false,
-	      },
-	      // autoHeight: true,
-	      pagination: {
-	        el: '.blog-slider__pagination',
-	        clickable: true,
-	      }
-	    });
-	</script>
-
-
-
-	<script>
-	$('#button, #buttons').on('click', function() {
-		$(".opacity-nav").fadeToggle("slow", "linear");
-	});
-	</script>
 </body>
 </html>

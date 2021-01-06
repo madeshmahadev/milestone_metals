@@ -277,6 +277,10 @@ body{
 	font-size: 14px;
 }
 
+.uk-navbar-right .uk-navbar-item .uk-navbar-nav li a:hover{
+	font-weight: bolder;
+}
+
 .uk-navbar-right .uk-navbar-item .uk-navbar-nav .contact-btn {
 	border: 2px solid white;
     border-radius: 20px;

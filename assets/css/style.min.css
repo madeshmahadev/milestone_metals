@@ -239,7 +239,7 @@ body{
 .uk-navbar-right .uk-navbar-item .uk-navbar-nav li a{
 	font-family: 'Rotunda Regular';
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .uk-navbar-right .uk-navbar-item .uk-navbar-nav .contact-btn {
@@ -325,6 +325,23 @@ body{
     margin: auto;
 }
 
+.small-container-3 {
+	background-color: white;
+    color: #001644;
+    padding: 50px;
+    height: 25rem;
+}
+
+.small-container-3 .sub-heading {
+	font-size: 5.2em;
+    width: 50%;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-family: "Rotunda Extra Bold";
+    color: #001644;
+    line-height: 72px;
+    margin: auto;
+}
 
 .header-sub-heading {
     font-family: 'Rotunda Extra Bold Italic';
@@ -496,6 +513,15 @@ body{
 .footer-contact-btn, .footer-list p {
 	font-size: smaller;
 	padding-top: 5px;
+}
+
+.footer-list li a {
+	color: white;
+	margin-bottom: 5px;
+}
+
+.footer-list li a span{
+    margin-right: 5px;
 }
 
 .footer-sub-heading-2 {

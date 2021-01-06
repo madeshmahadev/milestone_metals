@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/css/uikit.min.css" />
 	<link rel="stylesheet" href="/assets/css/style.min.css" />
 	<link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/js/uikit.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/js/uikit-icons.min.js"></script>
 	<!--favicon -->
@@ -46,21 +48,33 @@
 
 <!-- Sticky navbar -->
 <div class="uk-position-top" id="top">
-  <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;"
+  <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;" 
        data-uk-sticky="animation: uk-animation-slide-top; 
                        sel-target: .uk-navbar-container; 
                        cls-active: uk-navbar-sticky; 
-                       cls-inactive: uk-navbar-transparent uk-light; top: 0">
+                       cls-inactive: uk-navbar-transparent uk-light; top: 200">
     <!-- LEFT -->
     <div class="uk-navbar-left">
       <a class="uk-navbar-item uk-logo logo" href="/"><img src="/assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
     </div>
-   
+
     <div class="uk-navbar-right">
       <div class="uk-navbar-item  uk-visible@m">
 		  <ul class="uk-navbar-nav uk-visible@m">
 			<li class="uk-active"><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
+			<li>
+			  <a href="#">Services</a>
+			  <div class="uk-navbar-dropdown">
+				<ul class="uk-nav uk-navbar-dropdown-nav">
+				  <li><a href="#">Drive-In</a></li>
+				  <li><a href="#">Onsite Mobile</a></li>
+				  <li><a href="#">Roll-Off Service</a></li>
+				  <li><a href="#">Electronic Recycling</a></li>
+				  <li><a href="#">Brokerage Service</a></li>
+				</ul>
+			  </div>
+			</li>
 			<li><a href="#">News</a></li>
 			<li><a href="#">Gallery</a></li>
 			<li class="contact-btn"><a href="#">Contact</a></li>
@@ -72,7 +86,6 @@
     <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
       <span uk-navbar-toggle-icon></span>
     </a>
-    </div>
   </nav>
 </div>
 
@@ -186,6 +199,11 @@
                </div>
             </section>
 			
+			<div class="progress-wrap">
+				<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+					<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+				</svg>
+			</div>
 			
 			<section class="uk-section uk-section-muted" id="us-slider">
                <div class="uk-container">

@@ -1,8 +1,6 @@
 /*! Main Stylesheet | http://www.milestonemetals.com/ (c) 2020 Milestone Metals, Inc. | All rights reserved */
 
 /* Rotunda-Regular */
-
-
 :root {
 	--red: #da2c4d;
 	--yellow: #f8ab37;
@@ -228,6 +226,20 @@ body{
 }
 
 
+.uk-navbar-toggle .uk-icon>* {
+	fill: #001644;
+    width: 30px;
+}
+
+.uk-offcanvas-bar .uk-nav-default>li>a{
+	color: black !Important;
+}
+
+
+.uk-offcanvas-bar .uk-nav-default>li.uk-active>a{
+	color: #001644 !important;
+}
+
 .uk-navbar-container {
 	height: 6rem;
 }
@@ -263,6 +275,13 @@ body{
     color: white;
     box-shadow: 0 5px 12px rgba(0,0,0,.15);
 }
+
+
+
+.uk-open>.uk-offcanvas-bar {
+    background: white;
+}
+
 
 
 
@@ -720,6 +739,12 @@ body{
 	padding: 25px;
 }
 
+.block-service {
+	background-color: #001644;
+	padding: 25px;
+}
+
+
 .p1 {
 	background-image: url(https://images.unsplash.com/photo-1603855795444-174913c12916?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80);
 }
@@ -733,15 +758,19 @@ body{
 }
 
 .p4 {
-	background-image: url(https://images.unsplash.com/photo-1555907188-f9fd038c95d4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+	background-image: url(https://images.unsplash.com/photo-1608224873587-81ee37394b4e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);
 }
 
 .p5 {
-	background-image: url(https://images.unsplash.com/photo-1542596273-e6a0926f8543?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+	background-image: url(https://images.pexels.com/photos/128421/pexels-photo-128421.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 }
 
 
 
+.service-individual .header-section .services-landing-screen {
+    background: white;
+	min-height: fit-content !important;
+}
 
 
 .block4 {
@@ -798,5 +827,204 @@ body{
     font-family: 'Rotunda Extra Bold';
 }
 
+.block-service {
+	height: 600px;
+}
+
+.block-service-2 {
+	height: 650px;
+    width: auto;
+}
+
+
+.block-service .services-heading {
+	color: white;
+    font-family: 'Rotunda Extra Bold';
+    font-size: 5.2em;
+    padding: 20px;
+	margin: 0px;
+	text-transform: uppercase;
+    margin-top: 2rem;	
+}
+
+.block-service .services-p {
+	color: white;
+    padding: 20px;
+    font-size: 16px;
+	margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.block-service .uk-button {
+	background: white;
+    margin: 20px;
+    font-family: 'Rotunda Extra Bold';
+	color: #001644;
+}
+
+
+.service-individual {
+	margin-top: 6rem;
+}
+
 .block-img {
+}
+
+.service-type {
+	
+}
+
+#roll-off-service .block-service {
+    height: 640px;
+}
+
+#roll-off-service .block-service-2 {
+    height: 690px;
+    width: auto;
+}
+
+
+
+#electronics .block-service {
+    height: 800px;
+}
+
+#electronics .block-service-2 {
+    height: 850px;
+    width: auto;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#electronics .block-service .services-heading {
+    font-size: 4.2em; 
+}
+
+#electronics .block-service .services-p {
+    font-size: 14px;
+}
+
+
+#brokerage .block-service {
+    height: 750px;
+}
+
+#brokerage .block-service-2 {
+    height: 800px;
+    width: auto;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brokerage .block-service .services-heading {
+    font-size: 4.2em; 
+}
+
+#brokerage .block-service .services-p {
+    font-size: 14px;
+}
+
+
+#onsite .block-service {
+    height: 700px;
+}
+
+#onsite .block-service-2 {
+    height: 750px;
+    width: auto;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#onsite .block-service .services-heading {
+    font-size: 4.2em; 
+}
+
+#onsite .block-service .services-p {
+    font-size: 14px;
+}
+
+
+@media only screen and (min-width: 1300px) {
+
+.sphere-animation {
+    transform: none !important;
+    position: absolute;
+    top: 50%;
+    left: 66%;
+    width: 550px;
+    height: 550px;
+    margin: -290px 0 0 -290px;
+    display: block;
+    z-index: 1;
+}
+	
+}
+
+@media only screen and (max-width: 1200px) {
+
+.small-container {
+    height: 25rem;
+}
+
+.small-container .sub-heading, .small-container-2 .sub-heading, .small-container-3 .sub-heading {
+	margin-bottom: 2rem;
+    text-align: center;
+}
+
+.small-container p ,.small-container-2 p, .small-container-3 p{
+    text-align: center !important;
+    width: 80%;
+    margin: auto;
+}
+
+.slider-card-block .card-block {
+	width: 60%;
+    margin: auto;
+	margin-bottom: 2rem;
+}
+
+.footer__nav {
+    max-width: 1170px;
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 990px) {
+	.footer-cells {
+		display: grid;
+	}
+	.footer-cell {
+		margin-bottom: 2rem;
+	}
+}	
+
+@media only screen and (max-width: 768px){
+	.header-content {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.header-heading {
+		font-size: 4em;
+	}
+	
+	.service-type-block {
+		display: grid;
+	}
+	
+	.block1, .block4 {
+		text-align: center;
+		height: auto !important;
+	}
+	
+	.block1 .services-heading, .block4 .services-heading{
+		font-size: 3em;
+	}
+		
+	.p1, .p2, .p3, .p4, .p5 {
+		display: none;
+	}
+	
 }

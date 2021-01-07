@@ -68,11 +68,11 @@
 			  <a class="uk-active">Services</a>
 			  <div class="uk-navbar-dropdown">
 				<ul class="uk-nav uk-navbar-dropdown-nav">
-				  <li><a href="/services/">Drive-In</a></li>
-				  <li><a href="/services/">Onsite Mobile</a></li>
-				  <li><a href="/services/">Roll-Off Service</a></li>
-				  <li><a href="/services/">Electronic Recycling</a></li>
-				  <li><a href="/services/">Brokerage Service</a></li>
+					<li><a href="/services/drive-in">Drive-In</a></li>
+					<li><a href="/services/onsite-mobile">Onsite Mobile</a></li>
+					<li><a href="/services/roll-off-service">Roll-Off Service</a></li>
+					<li><a href="/services/electronic-recycling">Electronic Recycling</a></li>
+					<li><a href="/services/brokerage-service">Brokerage Service</a></li>
 				</ul>
 			  </div>
 			</li>
@@ -96,24 +96,28 @@
   <div class="uk-offcanvas-bar uk-flex uk-flex-column">
     <!-- navbar content her -->
     <!-- A - logo -->
-    <a class="uk-align-left uk-logo" href="/"><img src="../assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
+    <a class="uk-align-center uk-logo" href="/"><img src="./assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
     <!-- B - nav -->
     <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-      <li class="uk-active"><a href="#">Active - offcanvas</a></li>
+      <li><a href="/about-us">About</a></li>
       <li class="uk-parent">
-        <a href="#">Parent - offcanvas</a>
+        <a href="/services/">Services</a>
         <ul class="uk-nav-sub">
-          <li><a href="#">Child one - offcanvas</a></li>
-          <li><a href="#">Child two - offcanvas</a></li>
+				<li><a href="/services/drive-in">Drive-In</a></li>
+				<li><a href="/services/onsite-mobile">Onsite Mobile</a></li>
+		        <li><a href="/services/roll-off-service">Roll-Off Service</a></li>
+			    <li><a href="/services/electronic-recycling">Electronic Recycling</a></li>
+				<li><a href="/services/brokerage-service">Brokerage Service</a></li>
         </ul>
       </li>
-      <li class=""><a href="#">ITEM - offcanvas</a></li>
+	  <li><a href="/">News</a></li>
+      <li><a href="/">Gallery</a></li>
+	  <li class="contact-btn"><a href="#">Contact</a></li>
     </ul>
     <!--C- contact us -->
     <footer class="uk-margin-large-top">
       <hr>
-      <span uk-icon="icon: phone"></span>
-      <a class="uk-link-text" href="#">+972 3434 3435</a>
+      <p class="uk-link-text">Milestone Metals Inc. 2020</p>
     </footer>
   </div>
 </nav>
@@ -147,11 +151,11 @@
 			</div>
 			  <section class="uk-section" id="row1" data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium">
 				<div class="uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60">
-					<div class="uk-column-1-2">
+					<div class="uk-column-1-2 service-type-block">
 						<div class="block1 uk-height-large">
 							<h2 class="services-heading">Drive In</h2>
 							<p class="services-p">Milestone Metals Inc. operates convenient drive-in location accessible to customers from all parts of Virginia.</p>
-							<a href="#" class="uk-button uk-button-default">Read More</a>
+							<a href="/services/drive-in" class="uk-button uk-button-default">Read More</a>
 						</div>
 						<div class="block2 p1 uk-height-large">
 						</div>			
@@ -160,13 +164,13 @@
 			  </section>		
 			  <section class="uk-section" id="row2" data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium">
 				<div class="uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60">
-					<div class="uk-column-1-2">
+					<div class="uk-column-1-2 service-type-block">
 						<div class="block3 p2 uk-height-large">
 						</div>	
 						<div class="block4 uk-height-large">
 							<h2 class="services-heading">On Sight mobile <br>pick-up</h2>
 							<p class="services-p">Our exceptionally prepared purchasers can bring the piece yard experience to you! For business and mechanical records, we offer nearby salvaged material pickup administrations at your organizations place of work.</p>
-							<a href="#" class="uk-button uk-button-default">Read More</a>
+							<a href="/services/onsite-mobile" class="uk-button uk-button-default">Read More</a>
 						</div>		
 					</div>
 				</div>
@@ -174,11 +178,11 @@
 						
 			  <section class="uk-section" id="row1">
 				<div class="uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60">
-					<div class="uk-column-1-2">
+					<div class="uk-column-1-2 service-type-block">
 						<div class="block1 uk-height-large">
 							<h2 class="services-heading">Roll of service</h2>
 							<p class="services-p">Milestone Metals, Inc. gives move off compartment administrations to ferrous, non-ferrous metals, and development garbage. </p>
-							<a href="#" class="uk-button uk-button-default">Read More</a>
+							<a href="/services/roll-off-service" class="uk-button uk-button-default">Read More</a>
 						</div>
 						<div class="block2 p3 uk-height-large">
 						</div>			
@@ -187,13 +191,13 @@
 			  </section>		
 			  <section class="uk-section" id="row2">
 				<div class="uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60">
-					<div class="uk-column-1-2">
+					<div class="uk-column-1-2 service-type-block">
 						<div class="block3 p4 uk-height-large">
 						</div>	
 						<div class="block4 uk-height-large">
 							<h2 class="services-heading">Electronic Recycling</h2>
 							<p class="services-p">Electronics recycling in Virginia is as simple as setting up a time for pickup with eCycle and we will collect your out-dated computers and devices for secure disposal.</p>
-							<a href="#" class="uk-button uk-button-default">Read More</a>
+							<a href="/services/electronic-recycling" class="uk-button uk-button-default">Read More</a>
 						</div>		
 					</div>
 				</div>
@@ -201,11 +205,11 @@
 			  
 			  <section class="uk-section" id="row1">
 				<div class="uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60">
-					<div class="uk-column-1-2">
+					<div class="uk-column-1-2 service-type-block">
 						<div class="block1 uk-height-large">
 							<h2 class="services-heading">Brokerage Service</h2>
 							<p class="services-p">Milestone Metals, Inc. offers financier administrations for other reusing organizations and clients with huge volumes of non-ferrous and ferrous metals</p>
-							<a href="#" class="uk-button uk-button-default">Read More</a>
+							<a href="/services/brokerage-service" class="uk-button uk-button-default">Read More</a>
 						</div>
 						<div class="block2 p5 uk-height-large">
 						</div>			

@@ -83,25 +83,22 @@
     </div>
 
     <!--off-canvas trigger hamburger btn. show only on mobile -->
-    <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+    <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #sidenav">
       <span uk-navbar-toggle-icon></span>
     </a>
+	           
   </nav>
 </div>
 
 
-<nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: true">
-  <!-- offcanvas setting  -->
+<div id="sidenav" uk-offcanvas="overlay: true; mode: push;flip: true" class="uk-offcanvas">
   <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-    <!-- navbar content her -->
-    <!-- A - logo -->
-    <a class="uk-align-center uk-logo" href="/"><img src="./assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
-    <!-- B - nav -->
+	<button class="uk-offcanvas-close" type="button" uk-close></button>
     <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
       <li><a href="/about-us">About</a></li>
       <li class="uk-parent">
         <a href="/services/">Services</a>
-        <ul class="uk-nav-sub">
+        <ul class="uk-nav-sub" style="margin-top: 0rem;">
 				<li><a href="/services/drive-in">Drive-In</a></li>
 				<li><a href="/services/onsite-mobile">Onsite Mobile</a></li>
 		        <li><a href="/services/roll-off-service">Roll-Off Service</a></li>
@@ -113,13 +110,9 @@
       <li><a href="/">Gallery</a></li>
 	  <li class="contact-btn"><a href="#">Contact</a></li>
     </ul>
-    <!--C- contact us -->
-    <footer class="uk-margin-large-top">
-      <hr>
-      <p class="uk-link-text">Milestone Metals Inc. 2020</p>
-    </footer>
   </div>
-</nav>
+</div>
+
 
 			<header id="hero-header">
 			  <div class="uk-section header-section">
@@ -314,10 +307,10 @@
 						<div class="footer-cell">
 							<h2 class="footer-cell-heading">Sitemap</h2>
 							<ul class="footer-list">
-								<li>Home</li>
-								<li>About</li>
-								<li>Services</li>
-								<li>Contact</li>
+								<li><a href="/">Home</a></li>
+								<li><a href="/about-us">About</a></li>
+								<li><a href="/services/">Services</a></li>
+								<li><a href="/contact">Contact</a></li>
 							</ul>
 						</div>
 						<div class="footer-cell">
@@ -338,11 +331,13 @@
 							</ul>
 						</div>
 						<div class="footer-cell">
-							<h2 class="footer-cell-heading">Legals</h2>
+							<h2 class="footer-cell-heading">Services</h2>
 							<ul class="footer-list">
-								<li>Terms & Conditions</li>
-								<li>Code of Conduct</li>
-								<li>Goods and Services</li>
+								<li><a href="/services/drive-in">Drive-In</a></li>
+								<li><a href="/services/onsite-mobile">Onsite Mobile</a></li>
+								<li><a href="/services/roll-off-service">Roll-Off Service</a></li>
+								<li><a href="/services/electronic-recycling">Electronic Recycling</a></li>
+								<li><a href="/services/brokerage-service">Brokerage Service</a></li>
 							</ul>
 						</div>
 						<div class="footer-cell"> 
@@ -356,6 +351,9 @@
 						</div>
 					</div>
 				</nav>
+				<div class="uk-container uk-container-expand footer-legal">
+						<span class="uk-text-center">© 2021 Milestone Metals Inc. All rights reserved.</span>
+				</div>
 			</footer>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

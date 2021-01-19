@@ -232,9 +232,15 @@ body{
 }
 
 .uk-offcanvas-bar .uk-nav-default>li>a{
-	color: black !Important;
+	color: white !Important;
+    font-size: 24px;
 }
 
+.uk-offcanvas-bar ul{
+    margin-top: 4rem;
+    line-height: 50px;
+    padding: 20px;
+}
 
 .uk-offcanvas-bar .uk-nav-default>li.uk-active>a{
 	color: #001644 !important;
@@ -254,6 +260,17 @@ body{
 
 .uk-navbar-right .uk-navbar-item .uk-navbar-nav .uk-active {
 	font-weight: 800;
+}
+
+.uk-offcanvas-bar .uk-nav-parent-icon>.uk-parent>a::after {
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22rgba%2872,%20202,%20228,%200.7%29%22%20stroke-width%3D%221.1%22%20points%3D%2210%201%204%207%2010%2013%22%20%2F%3E%0A%3C%2Fsvg%3E);
+    position: relative;
+    top: 5px;
+}
+
+.uk-offcanvas-bar .uk-close {
+	color: #48CAE4;
+    padding: 12px;
 }
 
 #top {
@@ -279,7 +296,7 @@ body{
 
 
 .uk-open>.uk-offcanvas-bar {
-    background: white;
+    background: #001644;
 }
 
 
@@ -641,7 +658,7 @@ body{
 
 .site-footer {
 	background-color: #001644;
-	padding-bottom: 120px;
+	padding-bottom: 20px;
     padding-top: 90px;
 }
 
@@ -709,6 +726,16 @@ body{
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
+
+.footer-legal {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 25px;
+}
+
 
 .services-landing-screen .header-content p {
     font-size: 14px;
@@ -945,6 +972,9 @@ body{
 }
 
 
+
+
+
 @media only screen and (min-width: 1300px) {
 
 .sphere-animation {
@@ -1027,4 +1057,37 @@ body{
 		display: none;
 	}
 	
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.home-sidebar {
+		display: none;
+	}
+	.header-heading {
+		font-size: 3em;
+		line-height: 45px;
+	}
+	.header-sub-heading {
+		font-size: 2em;
+		line-height: 30px;
+	}
+	.header-content p {
+	    width: auto;
+		text-align: center;
+	}
+	.small-container .sub-heading, .small-container-2 .sub-heading, .small-container-3 .sub-heading {
+		font-size: 3em;
+		width: auto;
+		line-height: 45px;
+	}
+	.small-container p, .small-container-2 p, .small-container-3 p {
+		text-align: center !important;
+		width: 20rem;
+		margin-left: -1rem;
+    }
+	.slider-card-block .card-block {
+		width: 90%;
+	}
 }

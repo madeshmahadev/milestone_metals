@@ -56,67 +56,63 @@
                        cls-inactive: uk-navbar-transparent uk-light; top: 200">
     <!-- LEFT -->
     <div class="uk-navbar-left">
-      <a class="uk-navbar-item uk-logo logo" href="/"><img src="../assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
+      <a class="uk-navbar-item uk-logo logo" href="/"><img src="/assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
     </div>
 
     <div class="uk-navbar-right">
       <div class="uk-navbar-item  uk-visible@m">
 		  <ul class="uk-navbar-nav uk-visible@m">
-			<li><a href="/">Home</a></li>
+			<li class="uk-active"><a href="/">Home</a></li>
 			<li><a href="/">About</a></li>
-			<li >
-			  <a class="uk-active" href="/services/">Services</a>
+			<li>
+			  <a href="/services/">Services</a>
 			  <div class="uk-navbar-dropdown">
 				<ul class="uk-nav uk-navbar-dropdown-nav">
-					<li class="uk-active"><a href="/services/drive-in">Drive-In</a></li>
-					<li><a href="/services/onsite-mobile">Onsite Mobile</a></li>
-					<li><a href="/services/roll-off-service">Roll-Off Service</a></li>
-					<li><a href="/services/electronic-recycling">Electronic Recycling</a></li>
+					<li><a href="/services/drive-in">Drive-In</a></li><hr>
+					<li><a href="/services/onsite-mobile">Onsite Mobile</a></li><hr>
+					<li><a href="/services/roll-off-service">Roll-Off Service</a></li><hr>
+					<li><a href="/services/electronic-recycling">Electronic Recycling</a></li><hr>
 					<li><a href="/services/brokerage-service">Brokerage Service</a></li>
 				</ul>
 			  </div>
 			</li>
-			<li><a href="/">News</a></li>
+			<!--<li><a href="/">News</a></li>-->
 			<li><a href="/">Gallery</a></li>
-			<li class="contact-btn"><a href="#">Contact</a></li>
+			<li><a href="#">Contact</a></li>
 		  </ul>
       </div>
     </div>
 
     <!--off-canvas trigger hamburger btn. show only on mobile -->
-    <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+    <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #sidenav">
       <span uk-navbar-toggle-icon></span>
     </a>
+	           
   </nav>
 </div>
 
 
-<nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: true">
-  <!-- offcanvas setting  -->
+<div id="sidenav" uk-offcanvas="overlay: true; mode: push;flip: true" class="uk-offcanvas">
   <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-    <!-- navbar content her -->
-    <!-- A - logo -->
-    <a class="uk-align-left uk-logo" href="/"><img src="../assets/images/milestone-metals-logo.png" alt="Milestone Metals Logo" ></a>
-    <!-- B - nav -->
+	<button class="uk-offcanvas-close" type="button" uk-close></button>
     <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-      <li class="uk-active"><a href="#">Active - offcanvas</a></li>
+      <li><a href="/about-us">About</a></li>
       <li class="uk-parent">
-        <a href="#">Parent - offcanvas</a>
-        <ul class="uk-nav-sub">
-          <li><a href="#">Child one - offcanvas</a></li>
-          <li><a href="#">Child two - offcanvas</a></li>
+        <a href="/services/">Services</a>
+        <ul class="uk-nav-sub" style="margin-top: 0rem;">
+				<li><a href="/services/drive-in">Drive-In</a></li>
+				<li><a href="/services/onsite-mobile">Onsite Mobile</a></li>
+		        <li><a href="/services/roll-off-service">Roll-Off Service</a></li>
+			    <li><a href="/services/electronic-recycling">Electronic Recycling</a></li>
+				<li><a href="/services/brokerage-service">Brokerage Service</a></li>
         </ul>
       </li>
-      <li class=""><a href="#">ITEM - offcanvas</a></li>
+	  <!--<li><a href="/">News</a></li>-->
+      <li><a href="/">Gallery</a></li>
+	  <li class="contact-btn"><a href="#">Contact</a></li>
     </ul>
-    <!--C- contact us -->
-    <footer class="uk-margin-large-top">
-      <hr>
-      <span uk-icon="icon: phone"></span>
-      <a class="uk-link-text" href="#">+972 3434 3435</a>
-    </footer>
   </div>
-</nav>
+</div>
 								
 			<header id="hero-header" class="service-individual">
 			  <div class="uk-section header-section">
@@ -144,14 +140,17 @@
 	
 			<footer class="site-footer">
 				<nav class="footer__nav">
-					<div class="uk-column-1-4@l footer-cells">
-						<div class="footer-cell">
+					<div class="uk-column-1-5@l footer-cells">
+							<div class="footer-cell footer__nav__logo">
+								<img src="/assets/images/milestone-metals-inc.png" alt="milestone-metals-inc-logo" width="100px;" />
+							</div>
+						<div class="footer-cell footer__nav__sitemap">
 							<h2 class="footer-cell-heading">Sitemap</h2>
 							<ul class="footer-list">
-								<li>Home</li>
-								<li>About</li>
-								<li>Services</li>
-								<li>Contact</li>
+								<li><a href="/">Home</a></li>
+								<li><a href="/about-us">About</a></li>
+								<li><a href="/services/">Services</a></li>
+								<li><a href="/contact">Contact</a></li>
 							</ul>
 						</div>
 						<div class="footer-cell">
@@ -172,11 +171,13 @@
 							</ul>
 						</div>
 						<div class="footer-cell">
-							<h2 class="footer-cell-heading">Legals</h2>
+							<h2 class="footer-cell-heading">Services</h2>
 							<ul class="footer-list">
-								<li>Terms & Conditions</li>
-								<li>Code of Conduct</li>
-								<li>Goods and Services</li>
+								<li><a href="/services/drive-in">Drive-In</a></li>
+								<li><a href="/services/onsite-mobile">Onsite Mobile</a></li>
+								<li><a href="/services/roll-off-service">Roll-Off Service</a></li>
+								<li><a href="/services/electronic-recycling">Electronic Recycling</a></li>
+								<li><a href="/services/brokerage-service">Brokerage Service</a></li>
 							</ul>
 						</div>
 						<div class="footer-cell"> 
@@ -190,6 +191,9 @@
 						</div>
 					</div>
 				</nav>
+				<div class="uk-container uk-container-expand footer-legal">
+						<span class="uk-text-center">© 2021 Milestone Metals Inc. All rights reserved.</span>
+				</div>
 			</footer>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

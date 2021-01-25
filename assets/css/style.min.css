@@ -1118,8 +1118,11 @@ body{
 		text-align: center !important;
 		width: 20rem;
 		margin-left: -1rem;
-    }
+    	}
 	.slider-card-block .card-block {
 		width: 90%;
+	}	
+	.footer__nav__logo {
+	        margin-left: 1rem;
 	}
 }

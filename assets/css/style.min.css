@@ -499,7 +499,7 @@ body{
 
 .small-container-4 .uk-button {
     background: white;
-    margin: 20px;
+    margin: 30px;
     font-family: 'Rotunda Extra Bold';
 }
 
@@ -509,13 +509,7 @@ body{
     margin: auto;
 }
 
-.small-container-4 .uk-visible-toggle:not(:hover):not(:focus) .uk-hidden-hover:not(:focus-within) {
-	 width: auto!important; 
-     height: auto!important; 
-     padding: auto!important; 
-     margin: auto!important; 
-     overflow: auto!important; 
-}
+
 
 
 .header-sub-heading {
@@ -1162,7 +1156,16 @@ body{
 	    width: auto;
 		text-align: center;
 	}
-	.small-container .sub-heading, .small-container-2 .sub-heading, .small-container-3 .sub-heading {
+	
+	.small-container-2, .small-container-3 {
+		height: 28rem;
+	}
+	
+	.know-more-gallery {
+		    margin-left: -1rem;
+	}
+	
+	.small-container .sub-heading, .small-container-2 .sub-heading, .small-container-3 .sub-heading, .small-container-4 .sub-heading {
 		font-size: 3em;
 		width: auto;
 		line-height: 45px;
@@ -1171,11 +1174,16 @@ body{
 		text-align: center !important;
 		width: 20rem;
 		margin-left: -1rem;
-    	}
+    }
 	.slider-card-block .card-block {
 		width: 90%;
-	}	
+	}
 	.footer__nav__logo {
 	        margin-left: 1rem;
 	}
+	.card225 {
+		width: auto;
+		margin: auto;
+	}
+
 }

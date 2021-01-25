@@ -450,6 +450,7 @@ body{
     color: white;
     line-height: 72px;
     margin: auto;
+	text-align: center;
 }
 
 .small-container-3 {
@@ -468,7 +469,54 @@ body{
     color: #001644;
     line-height: 72px;
     margin: auto;
+	text-align: center;
 }
+
+
+.small-container-4 {
+	background-color: #001644;
+    color: white;
+    padding: 25px;
+    padding-top: 50px;
+}
+
+.small-container-4 .sub-heading {
+	font-size: 5.2em;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-family: "Rotunda Extra Bold";
+    color: white;
+    line-height: 72px;
+    margin: auto;
+	text-align: center;
+}
+
+.small-container-4 .services-p{
+    text-align: center;
+    font-family: Rotunda Italic;
+    font-size: 20px;
+}
+
+.small-container-4 .uk-button {
+    background: white;
+    margin: 20px;
+    font-family: 'Rotunda Extra Bold';
+}
+
+
+.card225 {
+    width: 375px;
+    margin: auto;
+}
+
+.small-container-4 .uk-visible-toggle:not(:hover):not(:focus) .uk-hidden-hover:not(:focus-within) {
+	 width: auto!important; 
+     height: auto!important; 
+     padding: auto!important; 
+     margin: auto!important; 
+     overflow: auto!important; 
+}
+
 
 .header-sub-heading {
     font-family: 'Rotunda Extra Bold Italic';
@@ -791,6 +839,11 @@ body{
 	padding: 25px;
 }	
 
+
+.know-more {
+	background-color: #001644;
+	padding: 25px;
+}
 
 .block1 {
 	background-color: #001644;

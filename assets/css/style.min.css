@@ -1050,6 +1050,23 @@ body{
     font-size: 14px;
 }
 
+.form-container-section {
+		 background: #001644;
+}
+
+.form-container-section-2 {
+    background: white;
+    padding: 25px;
+		border-radius: 5px;
+}
+
+.form-container-section-2 .uk-button {
+	background: #001644;
+margin: 20px;
+color: white;
+font-family: 'Rotunda Extra Bold';
+}
+
 
 
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Milestone Metals Inc.</title>
+	<title>Services - Milestone Metals Inc.</title>
 	<!--Stylesheets-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/css/uikit.min.css" />
 	<link rel="stylesheet" href="../assets/css/style.min.css" />
@@ -21,8 +21,6 @@
 	<link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192x192.png">
 	<link rel="icon" type="image/png" sizes="512x512" href="../android-chrome-512x512.png">
 	<link rel="manifest" href="../site.webmanifest">
-	
-
 </head>
 <body class="services-page">
 
@@ -47,6 +45,7 @@
 			</svg>
 	</div>
 
+
 <!-- Sticky navbar -->
 <div class="uk-position-top" id="top">
   <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;" 
@@ -65,7 +64,7 @@
 			<li><a class="uk-button-text" href="/">Home</a></li>
 			<li><a class="uk-button-text" href="/about">About</a></li>
 			<li>
-			  <a href="/services/">Services</a>
+			  <a class="uk-active" href="/services/">Services</a>
 			  <div class="uk-navbar-dropdown">
 				<ul class="uk-nav uk-navbar-dropdown-nav">
 					<li><a class="uk-button-text" href="/services/drive-in">Drive-In</a></li><hr>
@@ -73,12 +72,13 @@
 					<li><a class="uk-button-text" href="/services/roll-off-service">Roll-Off Service</a></li><hr>
 					<li><a class="uk-button-text" href="/services/electronic-recycling">Electronic Recycling</a></li><hr>
 					<li><a class="uk-button-text" href="/services/brokerage-service">Brokerage Service</a></li><hr>
+					<li><a class="uk-button-text" href="/services/scrap-car">Scrap Car</a></li>
 				</ul>
 			  </div>
 			</li>
 			<!--<li><a href="/">News</a></li>-->
-			<li><a class="uk-button-text" href="/">Gallery</a></li>
-			<li><a class="uk-button-text" href="#">Contact</a></li>
+			<li><a class="uk-button-text" href="/gallery">Gallery</a></li>
+			<li><a class="uk-button-text" href="/contact">Contact</a></li>
 		  </ul>
       </div>
     </div>
@@ -106,11 +106,12 @@
 		        <li><a class="uk-button-text" href="/services/roll-off-service">Roll-Off Service</a></li>
 			    <li><a class="uk-button-text" href="/services/electronic-recycling">Electronic Recycling</a></li>
 				<li><a class="uk-button-text" href="/services/brokerage-service">Brokerage Service</a></li>
+				<li><a class="uk-button-text" href="/services/scrap-car">Scrap Car</a></li>
         </ul>
       </li>
 	  <!--<li><a href="/">News</a></li>-->
-      <li><a class="uk-button-text" href="/">Gallery</a></li>
-	  <li class="contact-btn"><a class="uk-button-text" href="#">Contact</a></li>
+      <li><a class="uk-button-text" href="/gallery">Gallery</a></li>
+	  <li class="contact-btn"><a class="uk-button-text" href="/contact">Contact</a></li>
     </ul>
   </div>
 </div>
@@ -128,7 +129,7 @@
 							  <p class="uk-text-center">MILESTONE METALS INC PAYS TOP PRICES FOR SCRAP COPPER, BRASS, ALUMINUM, STAINLESS STEEL, STEEL, INSULATED COPPER WIRE, LEAD, AUTO BATTERIES, AND MORE!
 							  </p>
 							  <div class="uk-margin  uk-text-center" data-uk-parallax="y: 0,450;opacity: 1,0;easing: 0.3;target: !.uk-section;media: @s">
-								<a class="explore-us-button uk-text-center" href="#main" data-uk-scroll="offset: 100">Explore Us</a>
+								<a class="explore-us-button uk-text-center" href="#drive-in" data-uk-scroll="offset: 100">Explore Us</a>
 							  </div>
 							</div>
 
@@ -142,7 +143,7 @@
 					<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
 				</svg>
 			</div>
-			  <section class="uk-section" id="row1" data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium">
+			  <section class="uk-section" id="row1" data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium" id="drive-in">
 				<div class="uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60">
 					<div class="uk-column-1-2 service-type-block">
 						<div class="block1 uk-height-large">
@@ -209,7 +210,20 @@
 					</div>
 				</div>
 			  </section>		
- 			
+ 
+			  <section class="uk-section" id="row2">
+				<div class="uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60">
+					<div class="uk-column-1-2 service-type-block">
+						<div class="block3 p6 uk-height-large">
+						</div>	
+						<div class="block4 uk-height-large">
+							<h2 class="services-heading">Scrap Car</h2>
+							<p class="services-p">We specialise in buying scrap cars, as well as cars with high mileage, mot failures, damaged, broken and faulty cars, and even cars with some miles still left in them</p>
+							<a href="/services/scrap-car" class="uk-button uk-button-default">Read More</a>
+						</div>		
+					</div>
+				</div>
+			  </section> 
 			
 			<footer class="site-footer">
 				<nav class="footer__nav">
@@ -221,9 +235,9 @@
 							<h2 class="footer-cell-heading">Sitemap</h2>
 							<ul class="footer-list">
 								<li><a href="/">Home</a></li>
-								<li><a href="/about-us">About</a></li>
-								<li><a href="/services/">Services</a></li>
-								<li><a href="/contact">Contact</a></li>
+								<li><a href="/about" target="_blank">About</a></li>
+								<li><a href="/services/" target="_blank">Services</a></li>
+								<li><a href="/contact" target="_blank">Contact</a></li>
 							</ul>
 						</div>
 						<div class="footer-cell">
@@ -246,12 +260,12 @@
 						<div class="footer-cell">
 							<h2 class="footer-cell-heading">Services</h2>
 							<ul class="footer-list">
-								<li><a href="/services/drive-in">Drive-In</a></li>
-								<li><a href="/services/onsite-mobile">Onsite Mobile</a></li>
-								<li><a href="/services/roll-off-service">Roll-Off Service</a></li>
-								<li><a href="/services/electronic-recycling">Electronic Recycling</a></li>
-								<li><a href="/services/brokerage-service">Brokerage Service</a></li>
-								<li><a href="/services/scrap-car">Scrap Car</a></li>
+								<li><a href="/services/drive-in" target="_blank">Drive-In</a></li>
+								<li><a href="/services/onsite-mobile" target="_blank">Onsite Mobile</a></li>
+								<li><a href="/services/roll-off-service" target="_blank">Roll-Off Service</a></li>
+								<li><a href="/services/electronic-recycling" target="_blank">Electronic Recycling</a></li>
+								<li><a href="/services/brokerage-service" target="_blank">Brokerage Service</a></li>
+								<li><a href="/services/scrap-car" target="_blank">Scrap Car</a></li>
 							</ul>
 						</div>
 						<div class="footer-cell"> 

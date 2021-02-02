@@ -197,6 +197,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: #001644;
+    border-radius: 4px;
 }
 
 /* Handle on hover */
@@ -363,6 +364,15 @@ body{
 .uk-navbar-container:not(.uk-navbar-transparent) .uk-navbar-right .uk-navbar-item .uk-navbar-nav .uk-active {
 
 }
+
+.uk-navbar-container:not(.uk-navbar-transparent) .uk-navbar-right .uk-navbar-item .uk-navbar-nav li .uk-active {
+    color: white;
+    background: #001644;
+    padding: 10px 25px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
 
 .uk-navbar-container:not(.uk-navbar-transparent) .uk-navbar-right .uk-navbar-item .uk-navbar-nav .uk-active a{
     color: white;
@@ -868,7 +878,11 @@ body{
 }
 
 .p5 {
-	background-image: url(https://images.pexels.com/photos/128421/pexels-photo-128421.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	background-image: url(https://images.pexels.com/photos/128421/pexels-photo-128421.jpeg?auto=compress&cs=tinysrgb&dpr=3&w=375&q=80);
+}
+
+.p6 {
+	background-image: url(https://images.unsplash.com/photo-1542596273-e6a0926f8543?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
 }
 
 
@@ -1068,7 +1082,25 @@ font-family: 'Rotunda Extra Bold';
 }
 
 
+.about-us-ram-container {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
 
+
+.about-sub-container .uk-card-primary {
+    background: #001644;
+    color: #fff !important;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+}
+
+.about-sub-container .uk-card h3{
+	text-align: center;
+}
+.about-sub-container .uk-card p{
+    font-size: 12px;
+    text-align: justify;
+}
 
 
 @media only screen and (min-width: 1300px) {
@@ -1115,6 +1147,14 @@ font-family: 'Rotunda Extra Bold';
     width: 100%;
 }
 
+	.service-type-block {
+		display: grid;
+	}
+	
+	.p1, .p2, .p3, .p4, .p5, .p6 {
+		display: none;
+	}
+
 }
 
 @media only screen and (max-width: 990px) {
@@ -1123,6 +1163,10 @@ font-family: 'Rotunda Extra Bold';
 	}
 	.footer-cell {
 		margin-bottom: 2rem;
+	}
+	
+	.service-type-block {
+		display: grid;
 	}
 }	
 
@@ -1149,7 +1193,7 @@ font-family: 'Rotunda Extra Bold';
 		font-size: 3em;
 	}
 		
-	.p1, .p2, .p3, .p4, .p5 {
+	.p1, .p2, .p3, .p4, .p5, .p6 {
 		display: none;
 	}
 	
@@ -1202,5 +1246,7 @@ font-family: 'Rotunda Extra Bold';
 		width: auto;
 		margin: auto;
 	}
+	
+
 
 }

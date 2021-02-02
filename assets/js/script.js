@@ -10,13 +10,13 @@
 		}
 
 		function hidePreloader() {
-		  $("#preloader").delay(1000).fadeOut("slow");
+		  $("#preloader").delay(400).fadeOut("slow");
 		  console.log('offcanvas beforeshow 2');
 		}
 
 		function preloaderCheck() {
 			showPreloader();
-			$(window).load(function() {
+			$(document).ready(function() {
 				hidePreloader();
 				console.log('offcanvas beforeshow 3');
 			});

@@ -1099,7 +1099,9 @@ font-family: 'Rotunda Extra Bold';
 }
 .about-sub-container .uk-card p{
     font-size: 12px;
-    text-align: justify;
+    text-align: center;
+    color: white;
+    font-family: 'Rotunda Italic';
 }
 
 

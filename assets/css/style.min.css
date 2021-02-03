@@ -1316,9 +1316,19 @@ font-family: 'Rotunda Extra Bold';
 	}
 	
 	.small-container-2, .small-container-3 {
-		height: 28rem;
+		height: auto;
+		padding: 16px;
+		padding-bottom: 50px;
+		padding-right: 8px;
 	}
 	
+	.small-container {
+		height: auto;
+		padding: 15px;
+		padding-bottom: 50px;
+		padding-right: 8px;
+	}
+		
 	.small-container .sub-heading, .small-container-2 .sub-heading, .small-container-3 .sub-heading, .small-container-4 .sub-heading {
 		font-size: 3em;
 		width: auto;

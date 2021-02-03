@@ -1324,10 +1324,20 @@ font-family: 'Rotunda Extra Bold';
 		width: auto;
 		line-height: 45px;
 	}
+	
+	.card-block .uk-height-medium {
+		height: fit-content;
+	}
+	
+	.progress-wrap {
+		right: 20px;
+	}
+	
 	.small-container p, .small-container-2 p, .small-container-3 p {
-		text-align: center !important;
-		width: 20rem;
-		margin-left: -1rem;
+		text-align: justify !important;
+		width: 18rem;
+		margin-left: -2rem;
+		text-align-last: left;
     }
 	.slider-card-block .card-block {
 		width: 90%;

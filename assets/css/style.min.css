@@ -58,6 +58,10 @@
 }
 
 
+html, body {
+	overflow-x: hidden;
+}
+
 #loader-svg {
   width: 200px;
   position: absolute;
@@ -1169,6 +1173,12 @@ font-family: 'Rotunda Extra Bold';
 }
 
 
+#WACContainer.WACContainer button.WAC__button--primary:enabled{
+	filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5));
+}
+
+
+
 @media only screen and (min-width: 1300px) {
 
 .sphere-animation {
@@ -1261,8 +1271,29 @@ font-family: 'Rotunda Extra Bold';
 		
 	.p1, .p2, .p3, .p4, .p5, .p6 {
 		display: none;
+	}	
+	
+	.service-individual .p1, .service-individual .p2, .service-individual .p3, .service-individual .p4, .service-individual .p5, .service-individual .p6 {
+		display: block;
+	    width: auto;
+		height: 350px;
 	}
 	
+	.service-individual-column {
+		display: grid;
+	}
+	
+	.block-service .services-heading {
+        font-size: 3.2em;
+	}
+	
+	#brokerage .block-service .services-heading, #electronics .block-service .services-heading, #onsite .block-service .services-heading, #roll-off-service .block-service .services-heading {
+		font-size: 3.2em;
+	}
+	
+	#brokerage .block-service, #electronics .block-service, #onsite .block-service, #roll-off-service .block-service {
+		height: 880px;
+	}
 }
 
 

@@ -1291,7 +1291,7 @@ font-family: 'Rotunda Extra Bold';
 		font-size: 3.2em;
 	}
 	
-	#brokerage .block-service, #electronics .block-service, #onsite .block-service, #roll-off-service .block-service {
+	#scrap-car .block-service, #brokerage .block-service, #electronics .block-service, #onsite .block-service, #roll-off-service .block-service {
 		height: 880px;
 	}
 }

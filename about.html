@@ -21,6 +21,7 @@
 	<link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192x192.png">
 	<link rel="icon" type="image/png" sizes="512x512" href="../android-chrome-512x512.png">
 	<link rel="manifest" href="../site.webmanifest">
+	<style>.uk-dotnav>.uk-active>* {background-color: white;}.uk-dotnav>*>* {background: #ffffff85;}</style>
 
 
 </head>
@@ -191,47 +192,46 @@
                         </div>
 						
                      </div>
-                     <div class="uk-grid uk-child-width-1-2@l uk-flex-middle  know-more-gallery" data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium" uk-height-match>
+                     <!--<div class="uk-grid uk-child-width-1-2@l uk-flex-middle " data-uk-scrollspy="target: > div ; delay: 250; cls: uk-animation-slide-bottom-medium" uk-height-match>
                         <div class="uk-width-expand">
-
-							<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
-
-								
-								<ul class="uk-slider-items uk-grid">
-									<li class="uk-width-3-4">
-										<div class="uk-panel">
-											<img src="https://getuikit.com/docs/images/photo.jpg" alt="">
-										</div>
+							<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: pull">
+								<ul class="uk-slideshow-items">
+									<li>
+										<img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" uk-cover>
 									</li>
-									<li class="uk-width-3-4">
-										<div class="uk-panel">
-											<img src="https://getuikit.com/docs/images/dark.jpg" alt="">
-										</div>
+									<li>
+										<img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" uk-cover>
 									</li>
-									<li class="uk-width-3-4">
-										<div class="uk-panel">
-											<img src="https://getuikit.com/docs/images/light.jpg" alt="">
-										</div>
-									</li>
-									<li class="uk-width-3-4">
-										<div class="uk-panel">
-											<img src="https://getuikit.com/docs/images/photo2.jpg" alt="">
-										</div>
-									</li>
-									<li class="uk-width-3-4">
-										<div class="uk-panel">
-											<img src="https://getuikit.com/docs/images/photo3.jpg" alt="">
-										</div>
+									<li>
+										<img src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" uk-cover>
 									</li>
 								</ul>
-
-								<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-								<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-							</div>						
-						
+								<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+								<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+							</div>
 						</div>
-                     </div>
+                     </div>-->
+					 
+
+
+							<div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; max-height: 300; autoplay-interval: 2500;">
+								<ul class="uk-slideshow-items">
+									<li>
+										<img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" uk-cover>
+									</li>
+									<li>
+										<img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" uk-cover>
+									</li>
+									<li>
+										<img src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" uk-cover>
+									</li>
+								</ul>
+								<ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin" id="know-more-container"></ul>
+								
+							</div>
+
+
+					 
                   </div>
                </div>
             </section>

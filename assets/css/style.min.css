@@ -342,6 +342,12 @@ body{
 }
 
 
+.uk-offcanvas-bar {
+    background: #001644 !Important;
+}
+
+
+
 .uk-light hr .uk-hr, hr {
     overflow: visible;
     text-align: inherit;
@@ -1105,6 +1111,64 @@ font-family: 'Rotunda Extra Bold';
 }
 
 
+
+
+.uk-light .uk-dotnav>*>* {
+    background-color: #22222294;
+    border-color: rgba(255,255,255,.9);
+}
+
+.uk-light .uk-dotnav>.uk-active>* {
+    background-color: #001644;
+    border-color: transparent;
+}
+
+.gallery-block .uk-text-lead {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #001644;
+    /* font-family: 'Rotund'; */
+    font-weight: 600;
+}
+
+.uk-gallery-side-block {
+	background: #001644b0;
+}
+
+.uk-section-primary-blue {
+    background: #001644;
+}
+
+.section-dark .uk-gallery-side-block {
+    background: #ffffffb5;
+}
+
+.section-dark .uk-gallery-side-block h3{
+    color:  #001644;
+}
+
+.uk-gallery-side-block h3{
+   font-family: 'Rotunda Extra Bold Italic';
+}
+
+.section-dark .gallery-block .uk-text-lead {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: white !important;
+    font-weight: 600;
+}
+
+.section-dark .uk-light .uk-dotnav>.uk-active>* {
+    background-color: #fff;
+    border-color: transparent;
+}
+
+#know-more-container .uk-dotnav>.uk-active>* {
+    background-color: white;
+    border-color: transparent;
+}
+
+
 @media only screen and (min-width: 1300px) {
 
 .sphere-animation {
@@ -1222,10 +1286,6 @@ font-family: 'Rotunda Extra Bold';
 	
 	.small-container-2, .small-container-3 {
 		height: 28rem;
-	}
-	
-	.know-more-gallery {
-		    margin-left: -1rem;
 	}
 	
 	.small-container .sub-heading, .small-container-2 .sub-heading, .small-container-3 .sub-heading, .small-container-4 .sub-heading {

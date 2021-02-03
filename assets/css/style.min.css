@@ -1346,7 +1346,7 @@ font-family: 'Rotunda Extra Bold';
 	.small-container p, .small-container-2 p, .small-container-3 p {
 		text-align: justify !important;
 		width: 18rem;
-		margin-left: 0px;
+		margin-left: 5px;
 		text-align-last: left;
     }
 	.slider-card-block .card-block {

@@ -1317,16 +1317,15 @@ font-family: 'Rotunda Extra Bold';
 	
 	.small-container-2, .small-container-3 {
 		height: auto;
-		padding: 16px;
+		padding: 0px;
 		padding-bottom: 50px;
-		padding-right: 8px;
+		padding-right: 0px;
 	}
 	
 	.small-container {
 		height: auto;
 		padding: 15px;
 		padding-bottom: 50px;
-		padding-right: 8px;
 	}
 		
 	.small-container .sub-heading, .small-container-2 .sub-heading, .small-container-3 .sub-heading, .small-container-4 .sub-heading {
@@ -1344,10 +1343,9 @@ font-family: 'Rotunda Extra Bold';
 	}
 	
 	.small-container p, .small-container-2 p, .small-container-3 p {
-		text-align: justify !important;
-		width: 18rem;
-		margin-left: 5px;
-		text-align-last: left;
+		text-align: center !important;
+		width: fit-content;
+		margin-left: 1.2rem;
     }
 	.slider-card-block .card-block {
 		width: 90%;
